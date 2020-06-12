@@ -1,0 +1,15 @@
+<aura:component
+  controller="GraphController"
+  implements="flexipage:availableForAllPageTypes"
+  access="global"
+>
+  <ltng:require scripts="{!$Resource.Chartjs}" afterScriptsLoaded="{!c.ctr}" />
+
+  <!--Elemento para criação da chart com aura:id-->
+  <div
+    class="slds-col slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--3-of-4"
+  >
+    <canvas aura:id="barChart" id="barChart" />
+    <!--only works with pure id and aura:id aura:id is for selection while id is for the ChartJS-->
+  </div>
+</aura:component>
