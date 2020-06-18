@@ -5,11 +5,33 @@
 >
   <ltng:require scripts="{!$Resource.Chartjs}" afterScriptsLoaded="{!c.ctr}" />
 
-  <!--Elemento para criação da chart com aura:id-->
-  <div
-    class="slds-col slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--3-of-4"
-  >
-    <canvas aura:id="barChart" id="barChart" />
-    <!--only works with pure id and aura:id aura:id is for selection while id is for the ChartJS-->
+  <div class="slds-grid slds-gutters slds-grid_align-start">
+    <!--Gráfico Aumento Limite-->
+    <div
+      class="slds-col slds-size--1-of-2" style="padding-bottom: 30px;"
+       >
+     
+    <canvas  aura:id="aumentoChart" id="aumentoChart"/>
+    </div>
+    <!--Gráfico Alteração de Regra de Exposição-->
+    <div
+      class="slds-col slds-size--1-of-2" style="padding-bottom: 30px;">
+    
+      <canvas    aura:id="exposicaoChart" id="exposicaoChart"/>
+    </div>
+    <!--Alterações de informações de faturamento-->
+    <div
+      class="slds-col slds-size--1-of-2" style="padding-bottom: 30px;"
+    >
+    
+      <canvas aura:id="faturamentoChart" id="faturamentoChart"/>
+    </div>
+    <!--Alterações de Taxas e Tarifas-->
+    <div
+      class="slds-col slds-size--1-of-2" style="padding-bottom: 30px;"
+    >
+    
+      <canvas aura:id="taxaChart" id="taxaChart"/>
+    </div>
   </div>
 </aura:component>
